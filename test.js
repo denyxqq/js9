@@ -19,6 +19,22 @@ function calculateEngravingPrice(message, pricePerWord){
 
     return price;
 }
-
 const totalPrice = calculateEngravingPrice(message, pricePerWord);
 console.log(`Загальна вартість : ${totalPrice}`);
+
+
+// #3
+function findLongestWord(string) {
+    let max = 0;
+    let biggestWord = "";
+    const array = string.split(" ");
+    for(let i = 0; i < array.length; i++){
+       if(array[i].length > max){
+        max = array[i].length;
+        biggestWord = array[i];
+       }
+    }
+   console.log(biggestWord);
+}
+
+findLongestWord(prompt("Введіть повідомлення"));
