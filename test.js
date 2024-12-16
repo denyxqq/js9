@@ -38,3 +38,14 @@ function findLongestWord(string) {
 }
 
 findLongestWord(prompt("Введіть повідомлення"));
+
+// #4
+
+function formatString(string) {
+    if (string.length <= 40) {
+      return string;
+    }
+    return string.slice(0, 40) + "...";
+  }
+  console.log(formatString(prompt("введіть текст")));
+  
